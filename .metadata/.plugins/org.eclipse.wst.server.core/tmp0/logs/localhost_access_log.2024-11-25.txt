@@ -1,0 +1,3 @@
+127.0.0.1 - - [25/Nov/2024:22:40:46 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Nov/2024:22:40:46 +0530] "GET /banking_apk/WEB-INF/classes/banker/AdminDAO.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/Nov/2024:22:40:46 +0530] "GET /favicon.ico HTTP/1.1" 404 762

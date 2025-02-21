@@ -1,78 +1,79 @@
-Banking Management System
+**Installation & Demo**
+FraudBlock
 
-Installation & Demo
+**Packages Required:**
 
-Technologies Used:
-
-MySQL
+MySQL Server
 
 MySQL Workbench
 
-Java
+Java Development Kit (JDK) 11 or higher
 
-Tomcat Server
+Apache Tomcat Server
 
-Node.js
+Maven (for dependency management)
 
-npm
+Any IDE (e.g., IntelliJ IDEA, Eclipse)
 
-HTML/CSS/JavaScript
+Other Requirements:
 
-JDBC
+Any Chromium-based browser (e.g., Chrome)
 
-Setup Process
+Postman (for API testing)
+
+**1.Setup Process**
 
 Clone the Project
 
-git clone https://github.com/your-repo/BankingManagementSystem
+git clone https://github.com/yourusername/YourProjectName
 
-Database Setup (MySQL & MySQL Workbench)
+**Set Up MySQL Database**
 
-Install MySQL and MySQL Workbench.
+-Open MySQL Workbench.
 
-Open MySQL Workbench and create a new database schema.
+-Create a new database (e.g., product_identification).
 
-Run the provided SQL scripts to create necessary tables.
+-Run the SQL scripts provided in the sql folder to set up the necessary tables and data.
 
-Update the database credentials in the project's configuration file.
+**Configure Database Connection**
 
-Backend Setup (Java & Tomcat Server)
+Open the project in your IDE.
 
-Install JDK and Apache Tomcat Server.
+Locate the application.properties or database.properties file.
 
-Configure Tomcat by placing the project in the webapps directory.
+Update the database connection details:
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/product_identification
+
+spring.datasource.username=root
+
+spring.datasource.password=yourpassword
+
+**Build the Project**
+
+Open a terminal in the project folder.
+
+Run the following command to install required dependencies:
+
+mvn clean install
+
+Deploy the Application
+
+**Open Apache Tomcat Server.**
+
+Deploy the generated WAR file located in the target folder of your project.
 
 Start the Tomcat server.
 
-Ensure database connectivity is established using JDBC.
+Access the Application
 
-Frontend Setup (Node.js & npm)
+**Open your browser and navigate to:**
 
-Navigate to the project directory:
+http://localhost:8080/YourProjectName
 
-cd BankingManagementSystem
+Interact with the Application
 
-Install required node modules:
+Use the web interface to interact with the product identification features.
 
-npm install
-
-Start the development server:
-
-npm start
-
-Testing the Application
-
-Open a web browser and navigate to http://localhost:8080/.
-
-Login using provided test credentials.
-
-Perform banking transactions, manage accounts, and check reports.
-
-Interacting with the System
-
-Admin Panel: Manage users, transactions, and system settings.
-
-User Panel: Perform banking operations such as deposits, withdrawals, and transfers.
-
-Reports: Generate transaction history and financial summaries.
-
+You can also use Postman to test the REST APIs provided by the application.
